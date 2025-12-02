@@ -1,0 +1,191 @@
+/* Audio Player Container - Light Grey Rounded Rectangle */
+.audio-player-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* padding: 10px 20px; */
+    /* border-radius: 70px; */
+    /* width: 100%; */
+    margin-top: 0px;
+    /* border: 1px solid #282828; */
+    /* max-width: 400px; */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+/* --- Play Button Styling - Black Circle --- */
+.player-controls {
+    flex-shrink: 0;
+}
+
+.play-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #282828;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: background-color 0.2s;
+    padding: 0;
+}
+
+.play-btn:hover {
+    background-color: #333333;
+}
+
+.play-btn svg {
+    display: block;
+}
+
+.play-icon,
+.pause-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* --- Timeline and Waveform Container --- */
+.audio-timeline-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 15px;
+    border: 1px solid #282828;
+    border-radius: 70px;
+    padding: 4px 20px;
+}
+
+.time-label {
+    color: #282828;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Public Sans', sans-serif;
+    white-space: nowrap;
+    flex-shrink: 0;
+    width: 30px !important;
+}
+
+/* Waveform Container */
+.waveform-container {
+    position: relative;
+    flex: 1;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 3px;
+    padding: 1px 0;
+}
+
+/* Waveform Bars Container */
+.waveform-bars {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1px;
+    padding: 2px 2px;
+    z-index: 0;
+}
+
+/* Individual Waveform Bar - Unplayed (Light Grey) */
+.waveform-bar {
+    flex: 1;
+    width: 3px;
+    background-color: #838383;
+    border-radius: 10px;
+    transition: background-color 0.1s;
+}
+
+/* Progress Overlay - Hidden, kept for potential future use */
+.progress-overlay {
+    display: none;
+}
+
+/* Waveform Bar Default Color - Unplayed (Light Grey) */
+.waveform-bar {
+    background-color: #838383;
+}
+
+@media (max-width: 1440px) {
+    .waveform-bar {
+        width: 2px;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .audio-player-container {
+        padding: 10px 15px;
+        gap: 12px;
+    }
+
+    .play-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .play-icon,
+    .pause-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .time-label {
+        font-size: 12px;
+    }
+
+    .waveform-container {
+        height: 35px;
+    }
+    .waveform-bar {
+        width: 1px;
+    }
+}
+
+@media (max-width: 767px) {
+    .audio-player-container {
+        padding: 0px 0px;
+        gap: 10px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        position: relative;
+        right: 0px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .play-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .play-icon,
+    .pause-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .time-label {
+        font-size: 11px;
+    }
+
+    .waveform-container {
+        height: 30px;
+    }
+
+    .audio-timeline-box {
+        gap: 10px;
+    }
+}

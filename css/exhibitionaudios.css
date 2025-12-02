@@ -1,0 +1,404 @@
+/* Exhibition Audios Page Styles */
+
+/* Page Header - Yellow color override */
+.contentwrapper .pageheader.coloryellow {
+  color: #ffd200 !important;
+  margin-bottom: 0.5vw;
+  margin-top: 3vw;
+}
+
+/* Exhibition Audios Container - Flexbox layout (no grid) */
+.exhibition-audios-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vw;
+  margin-top: 0vw;
+  width: 100%;
+}
+
+/* Audio Item - Each content block */
+.audio-item {
+  width: calc(50% - 0.6vw);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vw;
+}
+
+/* Image styling */
+.audio-item .items-list-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 1.5vw;
+  aspect-ratio: 1 / 0.65;
+}
+
+/* Title styling */
+.audio-item-title {
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: #282828;
+  margin: 0 0 0.5vw 0;
+  letter-spacing: -0.5px;
+  line-height: 1.8vw;
+}
+
+/* Artist styling - Yellow-orange color */
+.audio-item-artist {
+    font-size: 1.1vw;
+    font-weight: 400;
+    color: #ffd200;
+    margin: 0 0 0.7vw 0;
+    letter-spacing: -0.25px;
+}
+
+/* Button styling */
+.audio-item-button {
+  background-color: #ffffff;
+  border: 1px solid #282828;
+    color: #282828;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 12px;
+    letter-spacing: -0.525px;
+    cursor: pointer;
+    width: fit-content;
+    font-family: 'Public Sans', sans-serif;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.audio-item-button:hover {
+  background-color: #282828;
+  color: #ffffff;
+}
+
+/* Responsive Styles for Tablet */
+@media (max-width: 991px) {
+  .exhibition-audios-container {
+    gap: 3vw;
+  }
+
+  .audio-item {
+    width: calc(50% - 1.5vw);
+    margin-bottom: 2vw;
+  }
+
+  .audio-item .items-list-img {
+    margin-bottom: 2vw;
+  }
+
+  .audio-item-title {
+    font-size: 2.5vw;
+    line-height: 3vw;
+    margin-bottom: 0.8vw;
+  }
+
+  .audio-item-artist {
+    font-size: 2vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .audio-item-button {
+    font-size: 1.4vw;
+    padding: 5px 12px;
+  }
+  .contentwrapper .pageheader.coloryellow {
+        margin-bottom: 3vw;
+        margin-top: 5vw;
+    }
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 767px) {
+  .contentwrapper .pageheader.coloryellow {
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+  }
+
+  .exhibition-audios-container {
+    flex-direction: column;
+    gap: 5vw;
+    margin-top: 5vw;
+  }
+
+  .audio-item {
+    width: 100%;
+    margin-bottom: 3vw;
+  }
+
+  .audio-item .items-list-img {
+    margin-bottom: 3vw;
+  }
+
+  .audio-item-title {
+    font-size: 5vw;
+    line-height: 6vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .audio-item-artist {
+    font-size: 4.1vw;
+    margin-bottom: 3vw;
+  }
+
+  .audio-item-button {
+    font-size: 2.5vw;
+    padding: 5px 10px;
+  }
+}
+
+/* ============================================
+   EXHIBITION AUDIOS DETAIL PAGE STYLES
+   ============================================ */
+
+/* Top Section with Light Grey Background */
+.audio-detail-top-section {
+  /* background-color: #f5f5f5; */
+  margin-top: 3vw;
+}
+
+.audio-detail-header {
+  /* display: flex;
+  flex-direction: column;
+  gap: 2vw; */
+}
+
+/* Image Container */
+.audio-detail-image-container {
+  width: 100%;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+.audio-detail-image-container .items-details-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 550px;
+  min-height: 250px;
+  /* aspect-ratio: 1 / 0.42; */
+}
+
+/* Info Container with Title and Artist */
+.audio-detail-info {
+    width: calc(100% - 430px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+}
+
+/* Title - Red Color */
+.audio-detail-title {
+    font-size: 2.2vw;
+    font-weight: 400;
+    color: #eb3729;
+    margin: 0 0 0.2vw 0;
+    letter-spacing: -1px;
+}
+
+/* Artist Name - Grey */
+.audio-detail-artist {
+    font-size: 1.1vw;
+    font-weight: 400;
+    color: #666666;
+    margin: 0 0 0 0;
+    letter-spacing: -0.25px;
+}
+
+/* Content Area - White Background */
+.audio-detail-content {
+  padding-top: 4vw;
+}
+
+.audio-detail-text {
+  /* max-width: 90%; */
+  /* margin: 0 auto; */
+}
+
+/* Headings */
+.audio-detail-heading,
+.audio-detail-subheading {
+  font-size: 1.8vw;
+  font-weight: 700;
+  color: #282828;
+  margin: 0 0 2vw 0;
+  letter-spacing: -0.5px;
+  line-height: 2.4vw;
+}
+
+.audio-detail-subheading {
+  margin-bottom: 1.5vw;
+}
+
+.audio-detail-subheading.with-arrow {
+  position: relative;
+  padding-right: 2vw;
+}
+
+.audio-detail-subheading.with-arrow::after {
+  content: "→";
+  position: absolute;
+  right: 0;
+  font-size: 1.8vw;
+  color: #282828;
+}
+
+/* Paragraphs */
+.audio-detail-text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #282828;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.25px;
+}
+
+/* Bottom Navigation Spacing */
+.audio-detail-content .bottomarrows {
+  margin-top: 5vw;
+  padding-top: 0vw;
+}
+
+.innerpagesection.bottomarrows a {
+    font-size: 16px;
+}
+.innerpagesection.bottomarrows a img {
+    width: 60px;
+}
+
+@media (max-width: 1440px) { 
+    .audio-detail-title {
+        font-size: 2.8vw;
+        margin-bottom: 0.5vw;
+    }
+    .audio-detail-artist {
+        font-size: 1.5vw;
+    }
+}
+
+/* Responsive Styles for Detail Page - Tablet */
+
+@media (max-width: 1440px) {
+    .audio-detail-info {
+        width: calc(100% - 350px);
+    }
+}
+
+@media (max-width: 991px) {
+  .audio-detail-top-section {
+    padding: 0vw 0;
+    margin-top: 5vw;
+  }
+
+  .audio-detail-header {
+    flex-direction: column;
+    gap: 3vw;
+  }
+
+  .audio-detail-image-container {
+    width: 100%;
+  }
+
+  .audio-detail-info {
+    padding-top: 0;
+    width: calc(100% - 320px);
+  }
+
+  .audio-detail-title {
+    font-size: 4vw;
+    margin-bottom: 0.5vw;
+  }
+
+  .audio-detail-artist {
+    font-size: 2vw;
+  }
+
+  .audio-detail-heading,
+  .audio-detail-subheading {
+    font-size: 3vw;
+    line-height: 3.8vw;
+    margin-bottom: 2.5vw;
+  }
+
+  .audio-detail-text p {
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+
+  .audio-detail-text {
+    max-width: 95%;
+  }
+  .innerpagesection.bottomarrows a {
+        font-size: 14px;
+    }
+    .innerpagesection.bottomarrows a img {
+        width: 45px;
+    }
+}
+
+/* Responsive Styles for Detail Page - Mobile */
+@media (max-width: 767px) {
+  .audio-detail-top-section {
+    padding: 0vw 0;
+    margin-top: 8vw;
+  }
+
+  .audio-detail-header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .audio-detail-title {
+    font-size: 8vw;
+    line-height: 9vw;
+    margin-bottom: 1vw;
+  }
+
+  .audio-detail-artist {
+    font-size: 4vw;
+  }
+
+  .audio-detail-heading,
+  .audio-detail-subheading {
+    font-size: 5vw;
+    line-height: 6vw;
+    margin-bottom: 3vw;
+  }
+
+  .audio-detail-subheading.with-arrow::after {
+    font-size: 5vw;
+  }
+
+  .audio-detail-text p {
+    font-size: 4vw;
+    line-height: 5.5vw;
+    margin-bottom: 4vw;
+  }
+
+  .audio-detail-content {
+    padding-top: 0vw;
+  }
+
+  .audio-detail-text {
+    max-width: 100%;
+  }
+
+  .audio-detail-content .bottomarrows {
+    margin-top: 6vw;
+    padding-top: 0vw;
+  }
+  .innerpagesection.bottomarrows a {
+    font-size: 13px;
+}
+.innerpagesection.bottomarrows a img {
+    width: 40px;
+}
+.audio-detail-info {
+    width: calc(100% - 0px);
+    padding-top: 0;
+}
+}
+
